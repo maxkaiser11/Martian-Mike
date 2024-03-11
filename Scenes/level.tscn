@@ -1,11 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://bw6ikxc40tb7g"]
+[gd_scene load_steps=2 format=3 uid="uid://bw6ikxc40tb7g"]
 
 [ext_resource type="Script" path="res://Scripts/level.gd" id="1_slhtg"]
-[ext_resource type="Texture2D" uid="uid://c5cmbdp0yjxtb" path="res://Assets/textures/player/Fall (32x32).png" id="2_fc72s"]
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_slhtg")
-
-[node name="Fall(32x32)" type="Sprite2D" parent="."]
-position = Vector2(76, 52)
-texture = ExtResource("2_fc72s")
