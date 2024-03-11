@@ -4,3 +4,6 @@ res://Scenes/level.tscn
 res://Scripts/level.gd
 res://Scenes/jump_pad.tscn
 res://Scripts/jump_pad.gd
+res://Scenes/saw.tscn
+res://Scripts/trap.gd
+res://Scenes/spike_ball.tscn
