@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name Player
 
 @export var gravity = 400
 @export var speed = 125
@@ -13,7 +14,7 @@ func _physics_process(delta: float) -> void:
 			velocity.y = 500
 		
 	if Input.is_action_just_pressed("jump") && is_on_floor():
-		velocity.y = -jump_force
+		jump(jump_force)
 	
 	# player movement
 	var direction = Input.get_axis("move_left", "move_right")
@@ -23,6 +24,9 @@ func _physics_process(delta: float) -> void:
 	velocity.x = direction * speed
 	move_and_slide()
 	update_animations(direction)
+
+func jump(force):
+	velocity.y = -force
 
 func update_animations(direction):
 	if is_on_floor():
